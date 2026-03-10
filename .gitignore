@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Environments
+venv/
+env/
+.env
+
+# Project specific
+logs/
+.ipynb_checkpoints/
+.DS_Store
+
+# Large data files (optional to ignore processed)
+data/processed/
