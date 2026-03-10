@@ -47,31 +47,32 @@ Based on the coefficients of the tuned Logistic Regression model, the most influ
 3.ST Depression (oldpeak)
 
 ## Repository Structure
+### 📂 Project Structure
 
+```text
 ├── data/
-│   ├── raw/                # Original dataset (Input files)
+│   ├── raw/                # Original dataset (heart.csv)
 │   └── processed/          # Scaled and split datasets (X_train, y_train, etc.)
 ├── logs/
-│   └── project.log         # System logs for debugging and tracking execution
+│   └── project.log         # Professional logging of execution steps
 ├── models/
-│   ├── trained_model.pkl   # Serialized Logistic Regression model (Tuned)
-│   └── scaler.pkl          # Saved StandardScaler object for inference consistency
+│   ├── trained_model.pkl   # Serialized Logistic Regression model
+│   └── scaler.pkl          # Saved StandardScaler for inference consistency
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb  # Exploratory Data Analysis (EDA)
-│   ├── 02_model_training.ipynb     # Model Benchmarking & Hyperparameter Tuning
-│   └── 03_evaluation.ipynb         # Detailed performance metrics & error analysis
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_model_training.ipynb
+│   └── 03_evaluation.ipynb
 ├── reports/
-│   └── model_performance.md        # Final evaluation report and summary
+│   └── model_performance.md  # Detailed analysis of model metrics
 ├── src/
-│   ├── app.py              # Streamlit Web Application (Inference UI)
-│   ├── data_prep.py        # Modular script for data cleaning & scaling
-│   └── heart_utils.py      # Utility functions (Logging, Directory management)
-├── .gitignore              # Files and directories to be ignored by Git
-├── Dockerfile              # Containerization instructions for production
-├── heart.csv               # Primary dataset file
-├── README.md               # Project documentation (this file)
-└── requirements.txt        # List of Python dependencies
-
+│   ├── app.py              # Streamlit Web Application
+│   ├── data_prep.py        # Data preprocessing scripts
+│   └── heart_utils.py      # Utility functions
+├── .gitignore              # Files to be ignored by Git
+├── Dockerfile              # Containerization instructions
+├── heart.csv               # Primary data source
+├── README.md               # Project documentation
+└── requirements.txt        # Python library dependencies
 ## Getting Started
 **Prerequisites**
 * Python 3.11+
