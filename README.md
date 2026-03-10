@@ -78,8 +78,6 @@ Based on the coefficients of the tuned Logistic Regression model, the most influ
 * Docker (Optional, for containerization)
 
 **Local Setup**
-* Clone the repository:
-git clone https://github.com/MHakobyan04/heart-disease-ai.git
 cd heart-disease-ai
 * Install Dependencies:
 pip install -r requirements.txt
